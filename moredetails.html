@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Details Page -->
+<div class="container mx-auto p-6">
+    <!-- Image Slider -->
+    <div class="flex space-x-4">
+      <div id="thumbnailContainer" class="flex flex-col space-y-2 bg-gray-200 rounded-md"></div>
+      <img id="mainImage" class="w-full h-96 bg-slate-300 rounded-lg object-contain" />
+    </div>
+  
+    <!-- Vehicle Details -->
+    <div class="bg-white shadow-lg rounded-md p-6 mt-6">
+        <h1 id="vehicleName" class="text-3xl font-bold"></h1>
+        <p id="vehicleDescription" class="text-gray-600"></p>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div>
+                <p><strong>Fuel Type:</strong> <span id="fuelType"></span></p>
+                <p><strong>Pickup Address:</strong> <span id="pickupAddress"></span></p>
+                <p><strong>Pin Code:</strong> <span id="areaPinCode"></span></p>
+                <p><strong>Phone:</strong> <span id="phoneNo"></span></p>
+            </div>
+            <!-- Price and Book Now Button aligned to the right -->
+            <div class="space-y-4 text-right">
+                <p class="text-xl font-bold">
+                    Price: ₹<span id="price">N.A.</span>
+                </p>
+                <button class="bg-green-500 text-white px-6 py-2 mt-4 rounded hover:bg-green-600 transition">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <script src="moredetails.js"></script>
+  
+</body>
+</html>
+

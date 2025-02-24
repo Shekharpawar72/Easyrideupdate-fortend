@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body class="bg-gray-100">
+
+    Floating Chat Icon
+    <div class="fixed bottom-5 right-5 bg-blue-500 text-white p-4 rounded-full shadow-lg cursor-pointer text-2xl" onclick="toggleChat()">
+        💬
+    </div>
+
+    <! Chatbot Window (Initially Hidden) -->
+    <div id="chat-container" class="fixed bottom-16 right-5 w-80  bg-white rounded-lg shadow-lg hidden flex flex-col">
+        <div class="bg-blue-500  text-white p-3 flex justify-between items-center rounded-t-lg">
+            <span>Chatbot</span>
+            <button class="text-xl" onclick="toggleChat()">✖</button>
+        </div>
+        <div id="chat-box" class="p-3 flex-1 overflow-y-auto h-64 bg-gray-50">
+            <div class="bg-blue-100 text-blue-900 p-2 rounded-md mb-2">Hello! How can I assist you?</div>
+        </div>
+        <div class="p-3 bg-gray-200 flex">
+            <input id="user-input" type="text" placeholder="Type your message..." class="flex-1 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" class="bg-blue-500 text-white px-3 py-2 rounded-md ml-2">Send</button>
+        </div>
+    </div> 
